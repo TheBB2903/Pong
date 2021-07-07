@@ -140,6 +140,8 @@ public class Bola : MonoBehaviour
 
     void Update()
     {
+        
+
         velocidad = velocidad + 2 * Time.deltaTime;
 
         tiempo -= Time.deltaTime;
@@ -192,11 +194,11 @@ public class Bola : MonoBehaviour
 
             if (golesIzquierda > golesDerecha)
             {
-                resultado.text = "!Jugador Izquierdo GANA!\nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
+                resultado.text = "!Jugador Izquierdo GANA!\nCon " + golesIzquierda + " Goles \nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
             }
             else if (golesDerecha > golesIzquierda)
             {
-                resultado.text = "!Jugador Derecho GANA!\nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
+                resultado.text = "!Jugador Derecho GANA!\nCon " + golesDerecha + " Goles \nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
             }
             else
             {
@@ -211,7 +213,7 @@ public class Bola : MonoBehaviour
         if (golesIzquierda == 5)
         {
 
-            resultado.text = "!Jugador Izquierdo GANA!\nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
+            resultado.text = "!Jugador Izquierdo GANA!\nCon " + golesIzquierda + " Goles \nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
             resultado.enabled = true;
             Time.timeScale = 0;
             return true;
@@ -220,7 +222,7 @@ public class Bola : MonoBehaviour
         else if (golesDerecha == 5)
         {
 
-            resultado.text = "!Jugador Derecho GANA!\nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
+            resultado.text = "!Jugador Derecho GANA!\nCon " + golesDerecha + " Goles \nPulsa I para volver a Inicio\nPulsa P para volver a jugar";
             resultado.enabled = true;
             Time.timeScale = 0;
             return true;

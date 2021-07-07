@@ -3,7 +3,15 @@ guid: cdf919dc7c38dc84485be3bbd0df73f8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - audioGol: {fileID: 8300000, guid: 32a7cf972af70784392c117a3c33a049, type: 3}
+  - audioRaqueta: {fileID: 8300000, guid: 99b73c4738028dc4d9fc270a8e9c9f5f, type: 3}
+  - audioRebote: {fileID: 8300000, guid: e76869db028d74c43aef88ab0e999efc, type: 3}
+  - audioInicio: {fileID: 8300000, guid: ea2cf419eed4d454d81f923f38c007f2, type: 3}
+  - contadorIzquierda: {instanceID: 0}
+  - contadorDerecha: {instanceID: 0}
+  - resultado: {instanceID: 0}
+  - temporizador: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

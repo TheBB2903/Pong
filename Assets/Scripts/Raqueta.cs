@@ -7,7 +7,7 @@ public class Raqueta : MonoBehaviour
 
     public float velocidad = 30.0f;
 
-    public string eje;
+    public string eje, eje2;
     
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,9 @@ public class Raqueta : MonoBehaviour
     {
 
         float v = Input.GetAxisRaw(eje);
+        float h = Input.GetAxisRaw(eje2);
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, v * velocidad);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(h * velocidad, v * velocidad);
 
     }
 }

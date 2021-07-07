@@ -6,22 +6,22 @@ using UnityEngine.UI;
 public class Porteria : MonoBehaviour
 {
 
-    void OnTriggerEnter2D(Collider2D bola)
+    void OnCollisionEnter2D(Collision2D bola)
     {
 
-        if (bola.name == "Bola")
+        if (bola.collider.name == "Bola")
         {
 
             if (this.name == "Izquierda")
             {
 
-                bola.GetComponent<Bola>().reiniciarBola("Derecha");
+                bola.collider.GetComponent<Bola>().reiniciarBola("Derecha");
 
             }
             else if (this.name == "Derecha")
             {
 
-                bola.GetComponent<Bola>().reiniciarBola("Izquierda");
+                bola.collider.GetComponent<Bola>().reiniciarBola("Izquierda");
 
             }
         }
